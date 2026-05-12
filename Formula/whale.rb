@@ -1,26 +1,26 @@
 class Whale < Formula
   desc "DeepSeek-native coding agent for the terminal"
   homepage "https://github.com/usewhale/whale"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/usewhale/whale/releases/download/v0.1.10/whale-darwin-arm64.tar.gz"
-      sha256 "6a86e1cc7357d64bdb37efb3e421839e9215b63f35e96ce7cee19d84ec11f90d"
+      url "https://github.com/usewhale/whale/releases/download/v0.1.11/whale-darwin-arm64.tar.gz"
+      sha256 "7d205bb4570fc935581c73713f4f06615ef989097529299bd3d482b3c3097e9d"
     else
-      url "https://github.com/usewhale/whale/releases/download/v0.1.10/whale-darwin-amd64.tar.gz"
-      sha256 "9cff4ab90803e8dcdb8b354648e266243287083125fcc8704c4cd76aaecfe3a2"
+      url "https://github.com/usewhale/whale/releases/download/v0.1.11/whale-darwin-amd64.tar.gz"
+      sha256 "362c810407cda88e132279af2e9905dcc389337f331a89f42217268fb7c83dcc"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/usewhale/whale/releases/download/v0.1.10/whale-linux-arm64.tar.gz"
-      sha256 "7253f0258c73514a80ce4364e089886d730de2948dfdfb2869628ad7fc7f6103"
+      url "https://github.com/usewhale/whale/releases/download/v0.1.11/whale-linux-arm64.tar.gz"
+      sha256 "ba084c04a744f7295f057ccc395927a0253d77a6eb4ab1ba2b00e4e40399e788"
     else
-      url "https://github.com/usewhale/whale/releases/download/v0.1.10/whale-linux-amd64.tar.gz"
-      sha256 "0130177f5a8de2efc0ba1e586e6ec7548ef97412a699eb84df34f5edcfbcd444"
+      url "https://github.com/usewhale/whale/releases/download/v0.1.11/whale-linux-amd64.tar.gz"
+      sha256 "ac945b7addbb26cb4321d7a95a53139a681d2b035309e8ea080ed2fe40339e9a"
     end
   end
 
@@ -29,6 +29,6 @@ class Whale < Formula
   end
 
   test do
-    assert_match "v0.1.10", shell_output("#{bin}/whale --version")
+    assert_match "v0.1.11", shell_output("#{bin}/whale --version")
   end
 end
