@@ -7,20 +7,20 @@ class Whale < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.20/whale-darwin-arm64.tar.gz"
-      sha256 "13052df4f62535aaf2031a971f839b24489a7ab7a5be8bdd6eb518fa02f05bcb"
+      sha256 "591ceeb8a97a1c99a23e47abdedcb47bd8088b39046cc91a7f6334202a90b062"
     else
       url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.20/whale-darwin-amd64.tar.gz"
-      sha256 "57baf967a9910bb15c45294654076ca47267b9e3ece214b216ce3fa38ece5270"
+      sha256 "740f3318cf2c412523a96db7d7b9eb75041bbc5a24306db4c002dc3386295a98"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.20/whale-linux-arm64.tar.gz"
-      sha256 "466d956834e4932fb53db10739de8ad8c6a3804559499c47acbc6349d8a5906c"
+      sha256 "3f7bd5a33f89f0153ec00eb3adb86be4e984beb89668f20de0abba111ef3b100"
     else
       url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.20/whale-linux-amd64.tar.gz"
-      sha256 "1a2c8b8445deebb918e3151687aa5500f7f29653bf6d5d6489d00d32dd41b4fa"
+      sha256 "ecfa0d36422d3cb0c6022f2b3e89495c0ca8a230675115b5412c8a0da5e31ac6"
     end
   end
 
