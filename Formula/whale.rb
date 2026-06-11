@@ -1,26 +1,26 @@
 class Whale < Formula
   desc "DeepSeek-native coding agent for the terminal"
   homepage "https://github.com/usewhale/DeepSeek-Code-Whale"
-  version "0.1.47"
+  version "0.1.48"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.47/whale-darwin-arm64.tar.gz"
-      sha256 "7bc1b8c6cb07e70598df9db344c15b05df0069089642f36b588a55f670ee9ebb"
+      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.48/whale-darwin-arm64.tar.gz"
+      sha256 "3fd143dff156e5575cf8e0b0fc61c616b401c007cc767b295b5d5cf5089e890b"
     else
-      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.47/whale-darwin-amd64.tar.gz"
-      sha256 "17b4ea357819f46dad31904d84f06e76d0bc6111ee8f3e94a7b8c3fd489ca471"
+      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.48/whale-darwin-amd64.tar.gz"
+      sha256 "40e65c195a3c2d7aa6ddda98ecbf36db4cc587d54dd8370a4e1b5a09055c2273"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.47/whale-linux-arm64.tar.gz"
-      sha256 "2a70f283349325a4960a69a39dc3fad03ddecfe84707826daf53a0c8e8a93b65"
+      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.48/whale-linux-arm64.tar.gz"
+      sha256 "b426d1b11ef593a4fa0b4ce37ee00b672602af56ecd1958a79148de35b0f6e69"
     else
-      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.47/whale-linux-amd64.tar.gz"
-      sha256 "4fc2b683d307da973a25592671d90a123a66c0b6656f1411a1ac677bba2ec60a"
+      url "https://github.com/usewhale/DeepSeek-Code-Whale/releases/download/v0.1.48/whale-linux-amd64.tar.gz"
+      sha256 "b0141e5609d231a53f74e319df218959a89ad48bf12d669b1eaa8723c1515909"
     end
   end
 
@@ -30,6 +30,6 @@ class Whale < Formula
   end
 
   test do
-    assert_match "v0.1.47", shell_output("#{bin}/whale --version")
+    assert_match "v0.1.48", shell_output("#{bin}/whale --version")
   end
 end
